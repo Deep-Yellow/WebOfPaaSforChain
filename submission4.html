@@ -64,7 +64,7 @@
                     <article class="post post-1">
                         <header class="entry-header">
                             <h1 class="entry-title">
-                                面向供应链领域的区块链系统架构设计方法和支持技术
+								 应用场景分析、原型开发和验证
                             </h1>
                             <div class="entry-meta">
                                 <span class="post-category"><a href="#">中期目标&项目进展</a></span>
@@ -73,36 +73,21 @@
                             </div>
                         </header>
                         <div class="entry-content clearfix">
-                            <p><strong>中期目标：</strong>展开高性能异构多链桥接融合机制的研究，以解决联盟链之间的互操作性问题；在任务1需求分析的基础上，对跨境供应链各个环节进行合理解耦，探究如何基于领域驱动设计（DDD）思想来生成微服务架构的设计方法、部署技术和评价方法，为面向供应链领域的区块链系统提供初步的架构体系；同时研究合适粒度的智能合约微服务化改造和部署方法。
+                            <p><strong>中期目标：</strong>研究基于容器架构支持区块链的大数据分布式高性能存储、计算和管理技术；供应链过程数据的区块链和大数据平台相结合的可信计算技术；交互式、无编程、可视化的大数据建模和分析技术；基于多源数据的智能化运维技术。
                             </p>
-                            <div class="my-img-box">
-                                <img class="my-img" src="./img/p1.png" />
-                                <div class="my-img-title">图1 研究概览</div>
-                            </div>
-                            <p><strong>研究情况：</strong>针对异构多链桥接融合，项目团队系统化调研了现有跨链解决方案，提出基于中继的异构多链桥接融合机制的高性能扩展方法并以插件实现；为解决异构多链共识验证和异构数据互联互通问题，提升供应链场景下的可追溯性和互操作性需求，需要建立起对现有解决方案的全面理解。由此，项目团队开展了针对跨链技术解决方案的调研研究，对已有的区块链跨链技术实现思路、特点及挑战问题进行系统化分析；为实现高性能的异构多链桥接融合机制，项目团队在调研发现的基于中继的典型跨链解决方案中选取具代表性的BitXHub作为基础开展扩展性研究。
+                            <p><strong>研究情况：</strong>为了解决大数据分布式存储问题，星环科技项目团队自主研发了海量数据的统一存储管理技术，提供统一的计算引擎和各种数据存储引擎的连接能力，可以通过统一的计算引擎对接多种不同数据存储引擎进行计算。统一数据存储管理支持多种分布式存储系统/引擎，包括分布式文件系统、基于内存或固态硬盘的分布式列式存储、分布式搜索引擎、分布式NewSQL数据库。
                             </p>
-                            <div class="my-img-box">
-                                <img class="my-img" src="./img/p2.png" />
-                                <div class="my-img-title">图2 基于中继的异构多链桥接融合机制的扩展方法与插件</div>
-                            </div>
-                            <p>针对体系结构设计方法和评估，项目团队提出一种动静态分析相结合的微服务边界识别方法，调研了区块链架构可度量指标（性能）的评估和优化方案，并在此基础上初步构建了领域驱动的供应链领域区块链系统体系结构；以任务1的业务需求调研、数据建模成果和原型设计为基础，项目团队使用领域驱动设计的方法对已有的架构进行迭代，设计了基于区块链和微服务架构的跨境水产品供应链系统；为进一步了解区块链系统的优化策略并产出一套适用于面向供应链的区块链应用的架构评估指南，项目团队调研了区块链架构可度量指标（性能）的优化和评估方案。针对区块链性能优化，梳理出链上与链下两类技术方案，其中链上方案6个，链下优化方案4个，总共23个优化策略；此外，由于现有性能建模方法的兼容性和有效性还有待提高。考虑到有限的事务池，项目团队研究并提出了一种基于排队论的Hyperledger
-                                Fabric区块链系统性能建模方法。以Fabric 2.0版本为例，建立了Fabric网络中交易过程的模型。</p>
-                            <div class="my-img-box">
-                                <img class="my-img" src="./img/p3.png" />
-                                <div class="my-img-title">图3 基于区块链和微服务的跨境水产品供应链系统架构</div>
-                            </div>
-                            <p>针对智能合约的高效研发，项目团队提出了一种用于智能合约微服务化改造的框架，结合支持DevOps的工具设计原型平台Mictract，实现智能合约的快速开发、部署和监控；针对基于Node.js的Hyperledger
-                                Fabric智能合约，项目团队以IDE插件的形式实现了一种辅助开发人员在链下进行智能合约开发的工具iChainCode；针对Hyperledger
-                                Fabric智能合约在开发过程中的问题和缺陷，项目团队提出了一种基于模糊测试的检测方法HFContractFuzzer；综合考虑区块链网络节点以及智能合约的开发运维两个维度，项目团队提出了面向Hyperledger
-                                Fabric的区块链及智能合约云化框架，共同实现智能合约微服务的高质量持续交付。</p>
-                            <div class="my-img-box">
-                                <img class="my-img" src="./img/p4.png" />
-                                <div class="my-img-title">图4 智能合约微服务化开发运维流程</div>
+                            <p>
+								通过ETL工具Transporter跨系统的抽取数据，做清洗加工后，统一由Inceptor存储在HDFS、Holodesk、Hyperbase、KunDB各种存储之上，实现数据集成和共享。Inceptor作为统一的SQL引擎，用于操作各类数据源，支持通过SQL DML语句在各个存储引擎中定义元数据，同时允许在多种数据源之中进行交叉查询。打通不同系统之间的数据壁垒，实现数据灵活自由的流转，构成统一的数据平台。针对数据在SSD闪存盘上进行加速存储技术的研发，成果申请软件著作权“星环分布式闪存数据库软件V3.0”[37]一项。
+							</p>
+							<div class="my-img-box">
+                                <img class="my-img" src="./img/rw4.png" />
+                                <div class="my-img-title">供应链海量数据统一存储管理技术架构</div>
                             </div>
                         </div>
                     </article>
                     <div class="read-more cl-effect-14" style="margin:0 0 40px">
-						<a href="submission3.html" class="more-link">下一个子任务 <span class="meta-nav">→</span></a>
+						<a href="submission5.html" class="more-link">下一个子任务 <span class="meta-nav">→</span></a>
 					</div>
                 </main>
                 <aside class="col-md-4">

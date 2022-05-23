@@ -11,3 +11,9 @@
 .my-img {
     width: 100%;
 }
+
+.my-img-scale60{
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+}
