@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- css -->
+    <link rel="stylesheet" href="css/iconfont.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="css/pace.css">
@@ -71,14 +72,20 @@
                         <div class="list-container">
                             <div class="flex-item" v-for="item,index in events" :key="index">
                                 <div class="poster"></div>
-                                <div class="content">
-                                    <h3 class="title">
-                                        {{item.title}}
-                                    </h3>
-                                    <p class="info">
-                                        {{item.info}}
-                                    </p>
-                                </div>
+                                <a :href="item.ref">
+                                    <div class="content">
+                                        <h3 class="title">
+                                            {{item.title}}
+                                        </h3>
+                                        <div class="meta">
+                                            <span class="iconfont icon-shijian"></span>
+                                            <span class="time">{{item.time}}</span>
+                                        </div>
+                                        <p class="info">
+                                            {{item.info}}
+                                        </p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </main>

@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "29865196",
+      "name": "时间",
+      "font_class": "shijian",
+      "unicode": "e683",
+      "unicode_decimal": 59011
+    }
+  ]
+}
