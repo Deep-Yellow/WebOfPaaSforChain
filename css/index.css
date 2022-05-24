@@ -1,5 +1,6 @@
 .my-logo {
-    height: 60px;
+    height: 40px;
+    margin-top: 8px;
 }
 
 .logo {
@@ -9,8 +10,8 @@
 
 .title {
     display: inline-block;
-    font-size: 20px;
-    width: 296px;
+    font-size: 18px;
+    width: 265px;
     margin-left: 20px;
     position: absolute;
 }
@@ -90,8 +91,11 @@
     width: 20% !important;
     height: 120px;
     flex-shrink: 0;
-    margin-right: 0;
     margin-bottom: 20px;
+}
+
+.li-line1{
+    margin-right: 40px;
 }
 
 .with-indent p{

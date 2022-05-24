@@ -19,7 +19,7 @@
 .flex-item .my-content {
     /* min-height: 200px; */
     box-sizing: border-box;
-    padding: 0 40px;
+    padding: 20px 40px;
 }
 
 .flex-item .my-content .my-title {
@@ -38,7 +38,7 @@
 
 .flex-item .my-content .my-info {
     color: black;
-    line-height: 1.8;
+    line-height: 2;
     font-size: 20px;
     text-indent: 0;
 }

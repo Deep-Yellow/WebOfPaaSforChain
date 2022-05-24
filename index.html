@@ -34,6 +34,15 @@
         .no-indent-box p {
             text-indent: 0 !important;
         }
+
+        .index-img{
+            width: 80%;
+        }
+
+        .index-img-box{
+            text-align: center;
+            margin: 24px;
+        }
     </style>
 </head>
 
@@ -44,7 +53,7 @@
                 <div class="col-md-6 col-sm-7 col-xs-8">
                     <div class="logo">
                         <a href="index.html">
-                            <img class="my-logo" src="./img/blc.png" />
+                            <img class="my-logo" src="./img/logo.png" />
                         </a>
                         <div class="title">中挪联合面向供应链的高性能区块链系统支撑平台关键技术研究</div>
                     </div>
@@ -90,17 +99,21 @@
                             </div>
                         </header>
                         <div class="entry-content clearfix">
+                            <p>中挪双边贸易正处于一个蓬勃发展的时期，挪威产品通过多种途径进入中国。在此背景下，本项目应运而生。</p>
+                            <div class="index-img-box">
+                                <img class="index-img" src="./img/index1.png" />
+                                <!--<div class="my-img-title">本项目拟研发的 PaaS 架构图</div>-->
+                            </div>
                             <p>本项目的最终目标是研发一套面向供应链的高性能区块链系统关键研发技术并提供一个开发支撑平台（即
                                 PaaS），用以支持应用开发者高效开发基于区块链技术的增强型跨境供应链管理平台。项目侧重研究高可靠、高安全、高性能、高可定制等增强特征的关键支持技术、方法、机制以及工具等，研究点涉及数据、业务以及应用三层。
                             </p>
                             <div class="double-item">
                                 <div class="double-item-row">
                                     <div class="my-img-box">
-                                        <img class="my-img" src="./img/structure.png" />
-                                        <div class="my-img-title">本项目拟研发的 PaaS 架构图</div>
+                                        <img class="my-img" src="./img/index3.png" />
                                     </div>
                                 </div>
-                                <div class="double-item-row vertical-equal">
+                                <div class="double-item-row" style="margin-top: 25px;padding-left: 40px;">
                                     <p>在<strong>应用层</strong>，本项目关注的是特定场景下的应用系统的模板以及相关服务接口定义和开发规约，用以支持应用开发者迅速构建系统原型。</p>
                                     <p>在<strong>业务层</strong>，本项目关注的是定义和实现多个微服务，用以支撑链上和链下各类数据的分发、存储、交换、同步以及获取等。此外，由于业务系统结构复杂，本项目将研究和实现相应的机制来提供服务治理和监控，确保最终的供应链系统稳定高效运行。
                                     </p>
@@ -109,24 +122,39 @@
                                 </div>
                             </div>
 
-                            <div class="no-indent-box">
-                                <p>项目通过六大创新性技术实现目标：</p>
-                                <li><strong>融合的微服务架构：</strong>基于领域驱动设计的指导思想，异构多链桥接融合机制，面向供应链区块链领域提供来研发多层跨链桥接融合框架。</li>
-                                <li><strong>可信的区块链平台：</strong>结合区块链、大数据级容器以及可信计算技术，实现区块链上下分离，形成一套技术领先的区块链大数据可信计算平台。
-                                </li>
-                                <li><strong>高效的大数据技术：</strong>通过统一的接口封装多种数据采集技术和工具，为SSD数据存储设计列式数据存储格式，满足供应链多源数据高效汇聚的需求。
-                                </li>
-                                <li><strong>可靠的保护策略：</strong>通过计算资源网络资源差异，产生针对不同场景的不同的隐私保护技术；改进现有的主流安全性分析方法以适应供应链联盟链。
-                                </li>
-                                <li><strong>兼容的共识机制：</strong>通过研制新的共识机制，弥补当前主流共识机制严重依赖高效稳定网络的局限性，提出一种兼容同步链和异步链的共识机制。
-                                </li>
-                                <li><strong>通用的智能合约：</strong>通过制定异常交易数据规则编写基于通用语言的智能合约，支持多租户、跨国家的智能合约安全和隐私自动化检测和分析。
-                                </li>
+                            <div class="double-item">
+                                <div class="double-item-row">
+                                    <div class="my-img-box">
+                                        <img class="my-img" src="./img/index2.png" />
+                                        <!--<div class="my-img-title">本项目拟研发的 PaaS 架构图</div>-->
+                                    </div>
+                                </div>
+                                <div class="double-item-row">
+                                    <p style="margin-top: 25px;">区块链技术与软件工程技术结合使供应链三类要素的属性和关系发生深刻变化。两方面核心关键技术挑战在于：
+                                    </p>
+                                    <ul>
+                                        <li>区块链技术应用于复杂供应链场景</li>
+                                        <li>面向区块链系统的软件工程技术与实践</li>
+                                    </ul>
+                                </div>
                             </div>
 
-                            <div class="my-img-box">
-                                <img class="my-img" src="./img/技术路线.png" />
-                                <div class="my-img-title">目标设置及技术路线</div>
+                            <div class="no-indent-box">
+                                <p>本项目通过六大创新性技术实现目标：</p>
+                                    <li><strong>融合的微服务架构：</strong>基于领域驱动设计的指导思想，异构多链桥接融合机制，面向供应链区块链领域提供来研发多层跨链桥接融合框架。</li>
+                                    <li><strong>可信的区块链平台：</strong>结合区块链、大数据级容器以及可信计算技术，实现区块链上下分离，形成一套技术领先的区块链大数据可信计算平台。
+                                    </li>
+                                    <li><strong>高效的大数据技术：</strong>通过统一的接口封装多种数据采集技术和工具，为SSD数据存储设计列式数据存储格式，满足供应链多源数据高效汇聚的需求。
+                                    </li>
+                                    <li><strong>可靠的保护策略：</strong>通过计算资源网络资源差异，产生针对不同场景的不同的隐私保护技术；改进现有的主流安全性分析方法以适应供应链联盟链。
+                                    </li>
+                                    <li><strong>兼容的共识机制：</strong>通过研制新的共识机制，弥补当前主流共识机制严重依赖高效稳定网络的局限性，提出一种兼容同步链和异步链的共识机制。
+                                    </li>
+                                    <li><strong>通用的智能合约：</strong>通过制定异常交易数据规则编写基于通用语言的智能合约，支持多租户、跨国家的智能合约安全和隐私自动化检测和分析。
+                                    </li>
+                            </div>
+                            <div class="index-img-box">
+                                <img class="index-img" src="./img/技术路线.png" />
                             </div>
                         </div>
 
@@ -149,17 +177,17 @@
                                 <a href="index.html#cooperate">合作单位</a>
                             </h1>
                             <ul class="cooperation2">
-                                <li>
+                                <li class="li-line1">
                                     <div class="cop-poster"
                                         style="background-image: url(https://www.ntnu.edu/documents/1295198420/1296559009/120-nanjing-u.jpg/dcc7bc1b-511c-f398-e675-27d2cd94947a?t=1607354609683);">
                                     </div>
                                 </li>
-                                <li>
+                                <li class="li-line1">
                                     <div class="cop-poster"
                                         style="background-image: url(https://www.ntnu.edu/documents/1295198420/1296559009/120-southeast-u.jpg/6416929d-9a9d-a782-cc0c-883e751e00a0?t=1607354609464);">
                                     </div>
                                 </li>
-                                <li>
+                                <li class="li-line1">
                                     <div class="cop-poster"
                                         style="background-image: url(https://www.ntnu.edu/documents/1295198420/1296559009/120-tsinghua.jpg/ace3717a-d5c5-7503-0724-2cbacdfe18d8?t=1607354609317);">
                                     </div>
@@ -168,9 +196,6 @@
                                     <div class="cop-poster"
                                         style="background-image: url(https://www.ntnu.edu/documents/1295198420/1296559009/120-ntnu.jpg/b391b593-8880-48ca-fd15-aff2fb1f62d4?t=1607354609622);">
                                     </div>
-                                </li>
-                                <li>
-                                    <div class="cop-poster"></div>
                                 </li>
                                 <li>
                                     <div class="cop-poster"
@@ -207,7 +232,7 @@
                             <h1 class="entry-title">
                                 <a href="index.html#cooperate">项目资助单位</a>
                             </h1>
-                            <p style="font-size: 22px;">科技部，国家重点研发计划，2019YFE0105500，中挪联合面向供应链的高性能区块链系统支撑平台关键技术研究。2020-07至2023-06。</p>
+                            <p>科技部，国家重点研发计划，2019YFE0105500，中挪联合面向供应链的高性能区块链系统支撑平台关键技术研究。2020-07至2023-06。</p>
                             <div style="width: 360px; margin:0 auto;">
                                 <img class="my-img" src="https://www.ntnu.edu/documents/1295198420/1296556811/300-ministry-of-sci-tech-china.png.jpg/9bb75191-e841-b8e6-eec7-36cd31f26379?t=1607350996290" />
                             </div>
