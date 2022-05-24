@@ -4,33 +4,42 @@
 
 .logo {
     width: 100%;
+    position: relative;
 }
 
+.title {
+    display: inline-block;
+    font-size: 20px;
+    width: 296px;
+    margin-left: 20px;
+    position: absolute;
+}
 
-
-.double-item{
+.double-item {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
 
-.double-item-row{
+.double-item-row {
     width: 50%;
+    padding: 15px;
 }
 
-.vertical-equal p{
+.vertical-equal p {
     padding-left: 20px;
     display: block;
     margin-top: 50px;
 }
 
-@media (max-width: 1279px){
-    .vertical-equal p{
+@media (max-width: 1279px) {
+    .vertical-equal p {
         margin-top: 10px;
     }
 }
-@media (max-width: 960px){
-    .vertical-equal p{
+
+@media (max-width: 960px) {
+    .vertical-equal p {
         margin-top: 10px;
         padding-left: 0;
         font-size: 14px;
@@ -39,7 +48,7 @@
 
 
 
-.cooperation{
+.cooperation {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -47,25 +56,28 @@
     list-style-type: none;
     padding: 0;
 }
-.cooperation li{
+
+.cooperation li {
     width: 40% !important;
     height: 80px;
     flex-shrink: 0;
     margin-right: 10%;
     margin-bottom: 20px;
 }
-.cooperation li:last-of-type{
+
+.cooperation li:last-of-type {
     margin-right: 10%;
     margin-bottom: 0;
 }
-.cop-poster{
+
+.cop-poster {
     width: 100%;
     height: 100%;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
-.cooperation2{
+.cooperation2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -74,7 +86,7 @@
     padding: 0;
 }
 
-.cooperation2 li{
+.cooperation2 li {
     width: 20% !important;
     height: 120px;
     flex-shrink: 0;

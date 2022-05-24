@@ -27,7 +27,7 @@
     <script src="js/modernizr.custom.js"></script>
     <script src="vue.js" type="text/javascript" charset="utf-8"></script>
     <style>
-        p{
+        p {
             text-indent: 40px;
         }
     </style>
@@ -40,7 +40,10 @@
                 <div class="row">
                     <div class="col-md-6 col-sm-7 col-xs-8">
                         <div class="logo">
-                            <h1><a href="index.html"><img class="my-logo" src="./img/blc.png" /> 中挪项目</a></h1>
+                            <a href="index.html">
+                                <img class="my-logo" src="./img/blc.png" />
+                            </a>
+                            <div class="title">中挪联合面向供应链的高性能区块链系统支撑平台关键技术研究</div>
                         </div>
                     </div><!-- col-md-4 -->
                     <div class="col-md-6 col-sm-5 col-xs-4">
@@ -50,7 +53,7 @@
                                     <span class="ion-navicon"></span>
                                 </button>
                             </div>
-    
+
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                 <ul class="nav navbar-nav navbar-right">
                                     <li class="cl-effect-11"><a href="index.html" data-hover="首页">首页</a></li>
@@ -71,28 +74,28 @@
                     <main class="col-md-12">
                         <div class="list-container">
                             <div class="flex-item" v-for="item,index in events" :key="index">
-                                <div class="poster"></div>
-                                <a :href="item.ref">
-                                    <div class="content">
-                                        <h3 class="title">
-                                            {{item.title}}
-                                        </h3>
-                                        <div class="meta">
-                                            <span class="iconfont icon-shijian"></span>
-                                            <span class="time">{{item.time}}</span>
-                                        </div>
-                                        <p class="info">
-                                            {{item.info}}
-                                        </p>
+                                <div class="poster">
+                                    <img :src="item.path" />
+                                </div>
+                                <div class="my-content">
+                                    <h3 class="my-title">
+                                        {{item.title}}
+                                    </h3>
+                                    <div class="my-meta">
+                                        <span class="iconfont icon-shijian"></span>
+                                        <span class="my-time">{{item.time}}</span>
                                     </div>
-                                </a>
+                                    <p class="my-info">
+                                        {{item.info}}
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </main>
                 </div>
             </div>
         </div>
-    
+
         <footer id="site-footer">
             <div class="container">
                 <div class="row">
@@ -103,7 +106,7 @@
                 </div>
             </div>
         </footer>
-    
+
         <!-- Mobile Menu -->
         <div class="overlay overlay-hugeinc">
             <button type="button" class="overlay-close"><span class="ion-ios-close-empty"></span></button>
@@ -123,9 +126,9 @@
 </body>
 <script type="text/javascript">
     var vm = new Vue({
-        el : "#app",
-        data : {
-            items : [
+        el: "#app",
+        data: {
+            items: [
                 { message: 'Foo' },
                 { message: 'Bar' }
             ],
@@ -134,25 +137,35 @@
                 author: 'Jane Doe',
                 publishedAt: '2016-04-10'
             },
-            events:[
+            events: [
                 {
-                    title: '测试标题1',
-                    time: '2020-01-01',
-                    info: '活动信息活动信息活动信息活动信息活动信息活动信息活动信息活动信息',
-                    ref: 'index.html'
+                    // title: '中方第一阶段项目总结会',
+                    time: '2021-01-08',
+                    info: '中方第一阶段项目总结会，由南京大学张贺教授主办。',
+                    ref: 'index.html',
+                    path: './img/event1.JPG'
                 },
                 {
-                    title: '测试标题2',
-                    time: '2020-01-01',
-                    info: '活动信息活动信息活动信息活动信息活动信息活动信息活动信息活动信息',
-                    ref: 'index.html'
+                    // title: '测试标题2',
+                    // time: '2020-01-01',
+                    // info: '活动信息活动信息活动信息活动信息活动信息活动信息活动信息活动信息',
+                    // ref: 'index.html',
+                    path: './img/event2.JPG'
                 },
                 {
-                    title: '测试标题3',
-                    time: '2020-01-01',
-                    info: '活动信息活动信息活动信息活动信息活动信息活动信息活动信息活动信息',
-                    ref: 'index.html'
+                    // title: '测试标题3',
+                    // time: '2020-01-01',
+                    // info: '活动信息活动信息活动信息活动信息活动信息活动信息活动信息活动信息',
+                    // ref: 'index.html',
+                    path: './img/event3.JPG'
                 },
+                {
+                    // title: '测试标题4',
+                    // time: '2020-01-01',
+                    // info: '活动信息活动信息活动信息活动信息活动信息活动信息活动信息活动信息',
+                    // ref: 'index.html',
+                    path: './img/event4.JPG'
+                }
             ]
         }
     });

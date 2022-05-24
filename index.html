@@ -23,8 +23,16 @@
     <script src="js/pace.min.js"></script>
     <script src="js/modernizr.custom.js"></script>
     <style>
-        p{
+        p {
             text-indent: 40px;
+        }
+
+        .no-indent-box {
+            margin: 12px 0;
+        }
+
+        .no-indent-box p {
+            text-indent: 0 !important;
         }
     </style>
 </head>
@@ -35,7 +43,10 @@
             <div class="row">
                 <div class="col-md-6 col-sm-7 col-xs-8">
                     <div class="logo">
-                        <h1><a href="index.html"><img class="my-logo" src="./img/blc.png" /> 中挪项目</a></h1>
+                        <a href="index.html">
+                            <img class="my-logo" src="./img/blc.png" />
+                        </a>
+                        <div class="title">中挪联合面向供应链的高性能区块链系统支撑平台关键技术研究</div>
                     </div>
                 </div><!-- col-md-4 -->
                 <div class="col-md-6 col-sm-5 col-xs-4">
@@ -59,7 +70,7 @@
                 </div>
             </div>
         </header>
-        </div>
+    </div>
     <div class="copyrights">Collect from <a href="http://www.cssmoban.com/">网页模板</a></div>
     <div class="copyrights">Modified by <a href="http://zmrenwu.com/">追梦人物的博客</a></div>
 
@@ -79,7 +90,9 @@
                             </div>
                         </header>
                         <div class="entry-content clearfix">
-                            <p>本项目最终目标是研发一套面向供应链的高性能区块链系统关键研发技术并提供一个开发支撑平台（即 PaaS），用以支持应用开发者高效开发基于区块链技术的增强型跨境供应链管理平台。项目侧重研究高可靠、高安全、高性能、高可定制等增强特征的关键支持技术、方法、机制以及工具等，研究点涉及数据、业务以及应用三层。</p>
+                            <p>本项目的最终目标是研发一套面向供应链的高性能区块链系统关键研发技术并提供一个开发支撑平台（即
+                                PaaS），用以支持应用开发者高效开发基于区块链技术的增强型跨境供应链管理平台。项目侧重研究高可靠、高安全、高性能、高可定制等增强特征的关键支持技术、方法、机制以及工具等，研究点涉及数据、业务以及应用三层。
+                            </p>
                             <div class="double-item">
                                 <div class="double-item-row">
                                     <div class="my-img-box">
@@ -89,9 +102,26 @@
                                 </div>
                                 <div class="double-item-row vertical-equal">
                                     <p>在<strong>应用层</strong>，本项目关注的是特定场景下的应用系统的模板以及相关服务接口定义和开发规约，用以支持应用开发者迅速构建系统原型。</p>
-                                    <p>在<strong>业务层</strong>，本项目关注的是定义和实现多个微服务，用以支撑链上和链下各类数据的分发、存储、交换、同步以及获取等。此外，由于业务系统结构复杂，本项目将研究和实现相应的机制来提供服务治理和监控，确保最终的供应链系统稳定高效运行。</p>
-                                    <p>在<strong>数据层</strong>，由于支持整个跨境供应链业务系统的数据量非常大，同时既有结构化数据，也有半结构化甚至非结构化的数据，因此，不可避免采取混合方式来存储数据，即区分链上数据和链下数据（存储于分布式数据库）。在这一层，智能合约的微服务化和跨链互操作性、供应链过程数据的区块链和大数据平台相结合的可信计算技术等则是研究重点。</p>
+                                    <p>在<strong>业务层</strong>，本项目关注的是定义和实现多个微服务，用以支撑链上和链下各类数据的分发、存储、交换、同步以及获取等。此外，由于业务系统结构复杂，本项目将研究和实现相应的机制来提供服务治理和监控，确保最终的供应链系统稳定高效运行。
+                                    </p>
+                                    <p>在<strong>数据层</strong>，由于支持整个跨境供应链业务系统的数据量非常大，同时既有结构化数据，也有半结构化甚至非结构化的数据，因此，不可避免采取混合方式来存储数据，即区分链上数据和链下数据（存储于分布式数据库）。在这一层，智能合约的微服务化和跨链互操作性、供应链过程数据的区块链和大数据平台相结合的可信计算技术等则是研究重点。
+                                    </p>
                                 </div>
+                            </div>
+
+                            <div class="no-indent-box">
+                                <p>项目通过六大创新性技术实现目标：</p>
+                                <li><strong>融合的微服务架构：</strong>基于领域驱动设计的指导思想，异构多链桥接融合机制，面向供应链区块链领域提供来研发多层跨链桥接融合框架。</li>
+                                <li><strong>可信的区块链平台：</strong>结合区块链、大数据级容器以及可信计算技术，实现区块链上下分离，形成一套技术领先的区块链大数据可信计算平台。
+                                </li>
+                                <li><strong>高效的大数据技术：</strong>通过统一的接口封装多种数据采集技术和工具，为SSD数据存储设计列式数据存储格式，满足供应链多源数据高效汇聚的需求。
+                                </li>
+                                <li><strong>可靠的保护策略：</strong>通过计算资源网络资源差异，产生针对不同场景的不同的隐私保护技术；改进现有的主流安全性分析方法以适应供应链联盟链。
+                                </li>
+                                <li><strong>兼容的共识机制：</strong>通过研制新的共识机制，弥补当前主流共识机制严重依赖高效稳定网络的局限性，提出一种兼容同步链和异步链的共识机制。
+                                </li>
+                                <li><strong>通用的智能合约：</strong>通过制定异常交易数据规则编写基于通用语言的智能合约，支持多租户、跨国家的智能合约安全和隐私自动化检测和分析。
+                                </li>
                             </div>
 
                             <div class="my-img-box">
@@ -99,15 +129,19 @@
                                 <div class="my-img-title">目标设置及技术路线</div>
                             </div>
                         </div>
-                        
+
                         <div class="entry-content clearfix">
                             <div class="read-more cl-effect-14" style="margin:70px 0 40px">
                                 <a href="submission1.html" class="more-link">子任务和进展 <span class="meta-nav">→</span></a>
                             </div>
-                            <p><strong>任务1</strong>：以调研跨境水产品贸易业务抽象数据模型，为跨境贸易中复杂多变的业务数据定义统一的数据结构，设计通信协议及区块链数据存储结构，完成跨境供应链管理系统的原型设计及实现。</p>
-                            <p><strong>任务2</strong>：展开高性能异构多链桥接融合机制的研究，以解决联盟链之间的互操作性问题；在任务1需求分析的基础上，对跨境供应链各个环节进行合理解耦，探究如何基于领域驱动设计（DDD）思想来生成微服务架构的设计方法、部署技术和评价方法，为面向供应链领域的区块链系统提供初步的架构体系；同时研究合适粒度的智能合约微服务化改造和部署方法。</p>
-                            <p><strong>任务3</strong>：研究如何利用区块链技术解决供应链管理（包括国际供应链管理）中的风险预测和管控问题，通过在供应链中集成区块链机制提高供应链的安全性、可信性和隐私保护能力。针对区块链系统的安全性，重点关注区块链系统的共识安全，隐私安全和智能合约安全。研究如何检测智能合约是否存在安全漏洞，研究基于多重保护机制的隐私数据保护框架，研究共识协议的抗攻击能力及如何评估共识协议安全性。</p>
-                            <p><strong>任务4</strong>：研究基于容器架构支持区块链的大数据分布式高性能存储、计算和管理技术；供应链过程数据的区块链和大数据平台相结合的可信计算技术；交互式、无编程、可视化的大数据建模和分析技术；基于多源数据的智能化运维技术。</p>
+                            <p><strong>任务1</strong>：以调研跨境水产品贸易业务抽象数据模型，为跨境贸易中复杂多变的业务数据定义统一的数据结构，设计通信协议及区块链数据存储结构，完成跨境供应链管理系统的原型设计及实现。
+                            </p>
+                            <p><strong>任务2</strong>：展开高性能异构多链桥接融合机制的研究，以解决联盟链之间的互操作性问题；在任务1需求分析的基础上，对跨境供应链各个环节进行合理解耦，探究如何基于领域驱动设计（DDD）思想来生成微服务架构的设计方法、部署技术和评价方法，为面向供应链领域的区块链系统提供初步的架构体系；同时研究合适粒度的智能合约微服务化改造和部署方法。
+                            </p>
+                            <p><strong>任务3</strong>：研究如何利用区块链技术解决供应链管理（包括国际供应链管理）中的风险预测和管控问题，通过在供应链中集成区块链机制提高供应链的安全性、可信性和隐私保护能力。针对区块链系统的安全性，重点关注区块链系统的共识安全，隐私安全和智能合约安全。研究如何检测智能合约是否存在安全漏洞，研究基于多重保护机制的隐私数据保护框架，研究共识协议的抗攻击能力及如何评估共识协议安全性。
+                            </p>
+                            <p><strong>任务4</strong>：研究基于容器架构支持区块链的大数据分布式高性能存储、计算和管理技术；供应链过程数据的区块链和大数据平台相结合的可信计算技术；交互式、无编程、可视化的大数据建模和分析技术；基于多源数据的智能化运维技术。
+                            </p>
                             <p><strong>任务5</strong>：评估和改进现有的区块链共识机制，研发在低带宽不稳定的网络环境下能保证链上链下数据的一致性和有效性的解决方案。</p>
                         </div>
                         <div id="cooperate" class="entry-content clearfix">
@@ -116,38 +150,56 @@
                             </h1>
                             <ul class="cooperation2">
                                 <li>
-                                    <div class="cop-poster" style="background-image: url(https://www.ntnu.edu/documents/1295198420/1296559009/120-nanjing-u.jpg/dcc7bc1b-511c-f398-e675-27d2cd94947a?t=1607354609683);"></div>
+                                    <div class="cop-poster"
+                                        style="background-image: url(https://www.ntnu.edu/documents/1295198420/1296559009/120-nanjing-u.jpg/dcc7bc1b-511c-f398-e675-27d2cd94947a?t=1607354609683);">
+                                    </div>
                                 </li>
                                 <li>
-                                    <div class="cop-poster" style="background-image: url(https://www.ntnu.edu/documents/1295198420/1296559009/120-tsinghua.jpg/ace3717a-d5c5-7503-0724-2cbacdfe18d8?t=1607354609317);"></div>
+                                    <div class="cop-poster"
+                                        style="background-image: url(https://www.ntnu.edu/documents/1295198420/1296559009/120-tsinghua.jpg/ace3717a-d5c5-7503-0724-2cbacdfe18d8?t=1607354609317);">
+                                    </div>
                                 </li>
                                 <li>
-                                    <div class="cop-poster" style="background-image: url(https://www.ntnu.edu/documents/1295198420/1296559009/120-southeast-u.jpg/6416929d-9a9d-a782-cc0c-883e751e00a0?t=1607354609464);"></div>
+                                    <div class="cop-poster"
+                                        style="background-image: url(https://www.ntnu.edu/documents/1295198420/1296559009/120-southeast-u.jpg/6416929d-9a9d-a782-cc0c-883e751e00a0?t=1607354609464);">
+                                    </div>
                                 </li>
                                 <li>
-                                    <div class="cop-poster" style="background-image: url(https://www.ntnu.edu/documents/1295198420/1296559009/120-ntnu.jpg/b391b593-8880-48ca-fd15-aff2fb1f62d4?t=1607354609622);"></div>
+                                    <div class="cop-poster"
+                                        style="background-image: url(https://www.ntnu.edu/documents/1295198420/1296559009/120-ntnu.jpg/b391b593-8880-48ca-fd15-aff2fb1f62d4?t=1607354609622);">
+                                    </div>
                                 </li>
                                 <li>
-                                    <div class="cop-poster" style="background-image: url(https://www.ntnu.edu/documents/1295198420/1296559009/120-transwarp.jpg/6a7c7465-d443-a70e-4d65-b1582b4d357a?t=1607354609387);"></div>
+                                    <div class="cop-poster"
+                                        style="background-image: url(https://www.ntnu.edu/documents/1295198420/1296559009/120-transwarp.jpg/6a7c7465-d443-a70e-4d65-b1582b4d357a?t=1607354609387);">
+                                    </div>
                                 </li>
                                 <li>
-                                    <div class="cop-poster" style="background-image: url(https://www.ntnu.edu/documents/1295198420/1296559009/120-hermes.jpg/dc904387-8a14-88c7-4f64-053c33d58777?t=1607354609743);"></div>
+                                    <div class="cop-poster"
+                                        style="background-image: url(https://www.ntnu.edu/documents/1295198420/1296559009/120-hermes.jpg/dc904387-8a14-88c7-4f64-053c33d58777?t=1607354609743);">
+                                    </div>
                                 </li>
                                 <li>
-                                    <div class="cop-poster" style="background-image: url(https://www.ntnu.edu/documents/1295198420/1296559009/120-zhangchen-bc.jpg/d81bd2ea-d375-7a61-057f-661ba2bc1313?t=1607354609217);"></div>
+                                    <div class="cop-poster"
+                                        style="background-image: url(https://www.ntnu.edu/documents/1295198420/1296559009/120-zhangchen-bc.jpg/d81bd2ea-d375-7a61-057f-661ba2bc1313?t=1607354609217);">
+                                    </div>
                                 </li>
                                 <li>
-                                    <div class="cop-poster" style="background-image: url(https://www.ntnu.edu/documents/1295198420/1296559009/120-dnv.jpg/493f578c-6921-ed56-07c9-ac1205dfa567?t=1607354609803);"></div>
+                                    <div class="cop-poster"
+                                        style="background-image: url(https://www.ntnu.edu/documents/1295198420/1296559009/120-dnv.jpg/493f578c-6921-ed56-07c9-ac1205dfa567?t=1607354609803);">
+                                    </div>
                                 </li>
                                 <li>
-                                    <div class="cop-poster" style="background-image: url(https://www.ntnu.edu/documents/1295198420/1296559009/120-sintef.jpg/6358a1c8-736f-63d7-ac93-b9727fdc642e?t=1607354609547);"></div>
+                                    <div class="cop-poster"
+                                        style="background-image: url(https://www.ntnu.edu/documents/1295198420/1296559009/120-sintef.jpg/6358a1c8-736f-63d7-ac93-b9727fdc642e?t=1607354609547);">
+                                    </div>
                                 </li>
-                                
+
                             </ul>
-                            <div class="my-img-box">
+                            <!-- <div class="my-img-box">
                                 <img class="my-img" src="./img/cooperate.png" />
                                 <div class="my-img-title">合作基础与互补</div>
-                            </div>
+                            </div> -->
                         </div>
                     </article>
                 </main>
