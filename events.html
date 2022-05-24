@@ -77,18 +77,22 @@
                                 <div class="poster">
                                     <img :src="item.path" />
                                 </div>
-                                <div class="my-content">
-                                    <h3 class="my-title">
-                                        {{item.title}}
-                                    </h3>
-                                    <div class="my-meta">
-                                        <span class="iconfont icon-shijian"></span>
-                                        <span class="my-time">{{item.time}}</span>
+                                <a :href="item.ref">
+                                    <div class="my-content">
+                                        <h3 class="my-title">
+                                            {{item.title}}
+                                        </h3>
+                                        
+                                        <div class="my-meta">
+                                            <span class="iconfont icon-shijian"></span>
+                                            <span class="my-time">{{item.time}}</span>
+                                        </div>
+                                        <p class="my-info">
+                                            {{item.info}}
+                                        </p>
                                     </div>
-                                    <p class="my-info">
-                                        {{item.info}}
-                                    </p>
-                                </div>
+                                </a>
+                                
                             </div>
                         </div>
                     </main>
@@ -128,42 +132,26 @@
     var vm = new Vue({
         el: "#app",
         data: {
-            items: [
-                { message: 'Foo' },
-                { message: 'Bar' }
-            ],
-            object: {
-                title: 'How to do lists in Vue',
-                author: 'Jane Doe',
-                publishedAt: '2016-04-10'
-            },
             events: [
                 {
                     // title: '中方第一阶段项目总结会',
                     time: '2021-01-08',
                     info: '中方第一阶段项目总结会，由南京大学张贺教授主办。',
-                    ref: 'index.html',
+                    ref: 'event1.html',
                     path: './img/event1.JPG'
                 },
                 {
                     // title: '测试标题2',
-                    // time: '2020-01-01',
-                    // info: '活动信息活动信息活动信息活动信息活动信息活动信息活动信息活动信息',
-                    // ref: 'index.html',
+                    time: '2021-07-06',
+                    info: '第三次会议，第⼆次阶段总结会议',
+                    ref: 'event2.html',
                     path: './img/event2.JPG'
                 },
                 {
-                    // title: '测试标题3',
-                    // time: '2020-01-01',
-                    // info: '活动信息活动信息活动信息活动信息活动信息活动信息活动信息活动信息',
-                    // ref: 'index.html',
-                    path: './img/event3.JPG'
-                },
-                {
                     // title: '测试标题4',
-                    // time: '2020-01-01',
-                    // info: '活动信息活动信息活动信息活动信息活动信息活动信息活动信息活动信息',
-                    // ref: 'index.html',
+                    time: '2022-01-13',
+                    info: '重点研发项目中期及第三阶段总结会',
+                    ref: 'event3.html',
                     path: './img/event4.JPG'
                 }
             ]
