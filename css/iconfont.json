@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "4765741",
+      "name": "time-circle",
+      "font_class": "time-circle",
+      "unicode": "e784",
+      "unicode_decimal": 59268
+    },
+    {
+      "icon_id": "4766294",
+      "name": "team",
+      "font_class": "team",
+      "unicode": "e7ae",
+      "unicode_decimal": 59310
+    },
+    {
       "icon_id": "29865196",
       "name": "时间",
       "font_class": "shijian",

@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/progress.css">
     <link rel="stylesheet" href="css/flex-list.css">
-
+    
 
 
     <!-- js -->
@@ -73,8 +73,10 @@
             <div class="container">
                 <div class="row">
                     <main class="col-md-12">
+                        <!-- list -->
                         <div class="list-container">
-                            <div class="flex-item" v-for="item,index in events" :key="index">
+                            <!-- items -->
+                            <div class="news-item" v-for="item,index in events" :key="index">
                                 <div class="poster">
                                     <img :src="item.path" />
                                 </div>
@@ -83,14 +85,15 @@
                                         <h3 class="my-title">
                                             {{item.title}}
                                         </h3>
-                                        
                                         <div class="my-meta">
-                                            <span class="iconfont icon-shijian"></span>
+                                            <span class="iconfont icon-shijian" style="font-size: 20px;"></span>
                                             <span class="my-time">{{item.time}}</span>
+                                            <span class="iconfont icon-team" style="margin-left:20px;font-size: 20px;"></span>
+                                            <span class="my-time">{{item.team}}</span>
                                         </div>
-                                        <p class="my-info">
+                                        <div class="my-info">
                                             {{item.info}}
-                                        </p>
+                                        </div>
                                     </div>
                                 </a>
                                 
@@ -135,25 +138,28 @@
         data: {
             events: [
                 {
-                    // title: '中方第一阶段项目总结会',
+                    title: '中方第一阶段项目总结会',
                     time: '2021-01-08',
-                    info: '第一阶段项目总结会议',
+                    info: '实验室现有全职教师4人（张贺、邵栋、荣国平、匡宏宇），全日制博士生10人，硕士研究生100 余人。师生已在ICSE、FSE、ESE、JSS、IST等国际顶级软件工程会议和期刊发表论文150余篇，其中11篇获国际最佳论文奖，实验室现有全职教师4人（张贺、邵栋、荣国平、匡宏宇），全日制博士生10人，硕士研究生100 余人。师生已在ICSE、FSE、ESE、JSS、IST等国际顶级软件工程会议和期刊发表论文150余篇，其中11篇获国际最佳论文奖。',
                     ref: 'event1.html',
-                    path: './img/event1.JPG'
+                    path: './img/event1.JPG',
+                    team: '南京大学'
                 },
                 {
-                    // title: '测试标题2',
+                    title: '测试标题2',
                     time: '2021-07-06',
-                    info: '第二阶段项目总结会议',
+                    info: '新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容',
                     ref: 'event2.html',
-                    path: './img/event2.JPG'
+                    path: './img/event2.JPG',
+                    team: '东南大学'
                 },
                 {
-                    // title: '测试标题4',
+                    title: '测试标题4',
                     time: '2022-01-13',
                     info: '中期及第三阶段项目总结会议',
                     ref: 'event3.html',
-                    path: './img/event4.JPG'
+                    path: './img/event4.JPG',
+                    team: '清华大学'
                 }
             ]
         }

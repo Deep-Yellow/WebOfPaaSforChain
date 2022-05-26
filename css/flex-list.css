@@ -42,3 +42,64 @@
     font-size: 20px;
     text-indent: 0;
 }
+
+/*---------- news --------------*/
+/* 和flex-item基本相同 有微小区别如字体 magin等 */
+.news-item{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #EEEEEE;
+    margin-bottom: 40px;
+}
+.news-item .poster{
+    flex-shrink: 0;
+    height: 240px;
+}
+.news-item .poster img {
+    height: 100%;
+}
+.news-item .my-content .my-info{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+.news-item .poster {
+    height: 240px;
+}
+
+.news-item .poster img {
+    height: 100%;
+}
+
+.news-item .my-content {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0px 40px;
+}
+
+.news-item .my-content .my-title {
+    color: #72C02C;
+    font-size: 28px;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+.news-item .my-content .my-time {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.news-item .my-content .my-info {
+    color: black;
+    line-height: 2;
+    font-size: 20px;
+    text-indent: 0;
+}
+
+.news-item .my-content:hover .my-info{
+    color:#909399
+}
