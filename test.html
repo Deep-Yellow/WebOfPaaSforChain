@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BLC中挪项目</title>
+
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/pace.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/progress.css">
+
+
+    <!-- js -->
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/pace.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <style>
+        p {
+            text-indent: 40px;
+        }
+
+        .no-indent-box {
+            margin: 12px 0;
+        }
+
+        .no-indent-box p {
+            text-indent: 0 !important;
+        }
+
+        .index-img{
+            width: 80%;
+        }
+
+        .index-img-box{
+            text-align: center;
+            margin: 24px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 导航栏 -->
+    <div class="container">
+        <header id="site-header">
+            <div class="row">
+                <div class="col-md-6 col-sm-7 col-xs-8">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img class="my-logo" src="./img/logo.png" />
+                        </a>
+                        <div class="title">中挪联合面向供应链的高性能区块链系统支撑平台关键技术研究</div>
+                    </div>
+                </div><!-- col-md-4 -->
+                <div class="col-md-6 col-sm-5 col-xs-4">
+                    <nav class="main-nav" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" id="trigger-overlay" class="navbar-toggle">
+                                <span class="ion-navicon"></span>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="cl-effect-11"><a href="index.html" data-hover="首页">首页</a></li>
+                                <li class="cl-effect-11"><a href="submission1.html" data-hover="进展">进展</a></li>
+                                <li class="cl-effect-11"><a href="publications.html" data-hover="成果">成果</a></li>
+                                <li class="cl-effect-11"><a href="events.html" data-hover="活动">活动</a></li>
+                                <li class="cl-effect-11"><a href="about.html" data-hover="原型">原型</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="content-body">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8">
+                    <article class="post post-1">
+                        <header class="entry-header">
+                            <h1 id="entry" class="entry-title" style="margin-bottom: 2px;">
+                                <a href="index.html#entry">项目概述</a>
+                            </h1>
+                        </header>
+                        <div class="entry-content clearfix">
+                            <p>中挪双边贸易正处于一个蓬勃发展的时期，挪威产品通过多种途径进入中国。在此背景下，本项目应运而生。</p>
+                            <div class="index-img-box">
+                                <img class="index-img" src="./img/index1.png" />
+                            </div>
+                            <p>本项目的最终目标是研发一套面向供应链的高性能区块链系统关键研发技术并提供一个开发支撑平台（即
+                                PaaS），用以支持应用开发者高效开发基于区块链技术的增强型跨境供应链管理平台。项目侧重研究高可靠、高安全、高性能、高可定制等增强特征的关键支持技术、方法、机制以及工具等，研究点涉及数据、业务以及应用三层。
+                            </p>
+                            <div class="my-img-box">
+                                <img class="my-img-scale60" src="./img/index3.png" />
+                            </div>
+                            <div class="grey-box" style="margin-top: 25px;">
+                                <p style="text-indent: 0; margin: 0;">在<strong>应用层</strong>，本项目关注的是特定场景下的应用系统的模板以及相关服务接口定义和开发规约，用以支持应用开发者迅速构建系统原型。</p>
+                                <p style="text-indent: 0; margin: 0;">在<strong>业务层</strong>，本项目关注的是定义和实现多个微服务，用以支撑链上和链下各类数据的分发、存储、交换、同步以及获取等。此外，由于业务系统结构复杂，本项目将研究和实现相应的机制来提供服务治理和监控，确保最终的供应链系统稳定高效运行。</p>
+                                <p style="text-indent: 0; margin: 0;">在<strong>数据层</strong>，由于支持整个跨境供应链业务系统的数据量非常大，同时既有结构化数据，也有半结构化甚至非结构化的数据，因此，不可避免采取混合方式来存储数据，即区分链上数据和链下数据（存储于分布式数据库）。在这一层，智能合约的微服务化和跨链互操作性、供应链过程数据的区块链和大数据平台相结合的可信计算技术等则是研究重点。</p>
+                            </div>
+
+                            <div class="double-item">
+                                <div class="double-item-row">
+                                    <div class="my-img-box">
+                                        <img class="my-img" src="./img/index2.png" />
+                                        <!--<div class="my-img-title">本项目拟研发的 PaaS 架构图</div>-->
+                                    </div>
+                                </div>
+                                <div class="double-item-row">
+                                    <p style="margin-top: 25px;">区块链技术与软件工程技术结合使供应链三类要素的属性和关系发生深刻变化。两方面核心关键技术挑战在于：
+                                    </p>
+                                    <ul>
+                                        <li>区块链技术应用于复杂供应链场景</li>
+                                        <li>面向区块链系统的软件工程技术与实践</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="no-indent-box">
+                                <p>本项目通过六大创新性技术实现目标：</p>
+                                    <li><strong>融合的微服务架构：</strong>基于领域驱动设计的指导思想，异构多链桥接融合机制，面向供应链区块链领域提供来研发多层跨链桥接融合框架。</li>
+                                    <li><strong>可信的区块链平台：</strong>结合区块链、大数据级容器以及可信计算技术，实现区块链上下分离，形成一套技术领先的区块链大数据可信计算平台。
+                                    </li>
+                                    <li><strong>高效的大数据技术：</strong>通过统一的接口封装多种数据采集技术和工具，为SSD数据存储设计列式数据存储格式，满足供应链多源数据高效汇聚的需求。
+                                    </li>
+                                    <li><strong>可靠的保护策略：</strong>通过计算资源网络资源差异，产生针对不同场景的不同的隐私保护技术；改进现有的主流安全性分析方法以适应供应链联盟链。
+                                    </li>
+                                    <li><strong>兼容的共识机制：</strong>通过研制新的共识机制，弥补当前主流共识机制严重依赖高效稳定网络的局限性，提出一种兼容同步链和异步链的共识机制。
+                                    </li>
+                                    <li><strong>通用的智能合约：</strong>通过制定异常交易数据规则编写基于通用语言的智能合约，支持多租户、跨国家的智能合约安全和隐私自动化检测和分析。
+                                    </li>
+                            </div>
+                            <div class="index-img-box">
+                                <img class="index-img" src="./img/技术路线.png" />
+                            </div>
+                        </div>
+                    </article>
+                </main>
+                <aside class="col-md-4">
+                    <!-- 最新新闻 -->
+                    <div class="widget widget-recent-posts" id="news-Aside">
+                        <h3 class="widget-title">最新新闻</h3>
+                        <ul>
+                            <li>
+                                <a href="#">第一阶段项目总结会议</a>
+                            </li>
+                            <li>
+                                <a href="#">第二阶段项目总结会议</a>
+                            </li>
+                            <li>
+                                <a href="#">中期及第三阶段项目总结会议</a>
+                            </li>
+                        </ul>
+                        <a href="news_list.html"><h5>查看更多</h5></a>
+                    </div>
+
+                    <!-- 研究子任务 -->
+                    <div style="height: 3 0px;"></div>
+                    <div class="widget widget-recent-posts">
+                        <h3 class="widget-title">研究子任务</h3>
+                        <ul>
+                            <li>
+                                <a href="submission1.html">应用场景分析、原型开发和验证</a>
+                            </li>
+                            <li>
+                                <a href="progress.html">面向供应链领域的区块链系统架构设计方法和支持技术</a>
+                            </li>
+                            <li>
+                                <a href="submission3.html">区块链安全和隐私数据保护机制</a>
+                            </li>
+                            <li>
+                                <a href="submission4.html">区块链与大数据融合的高性能数据存储、管理和分析</a>
+                            </li>
+                            <li>
+                                <a href="submission5.html">不稳定网络环境中的信任共识机制</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    
+
+                    <!-- 合作伙伴 -->
+                    <div style="height: 50px;"></div>
+                    <div>
+                        <h3 class="widget-title" style="margin-bottom: 0px;">合作伙伴</h3>
+                        <ul class="cooperation">
+                            <li>
+                                <div class="cop-poster"
+                                    style="background-image: url(https://www.ntnu.edu/documents/1295198420/1296559009/120-nanjing-u.jpg/dcc7bc1b-511c-f398-e675-27d2cd94947a?t=1607354609683);">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cop-poster"
+                                    style="background-image: url(https://www.ntnu.edu/documents/1295198420/1296559009/120-southeast-u.jpg/6416929d-9a9d-a782-cc0c-883e751e00a0?t=1607354609464);">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cop-poster"
+                                    style="background-image: url(https://www.ntnu.edu/documents/1295198420/1296559009/120-tsinghua.jpg/ace3717a-d5c5-7503-0724-2cbacdfe18d8?t=1607354609317);">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cop-poster"
+                                    style="background-image: url(https://www.ntnu.edu/documents/1295198420/1296559009/120-ntnu.jpg/b391b593-8880-48ca-fd15-aff2fb1f62d4?t=1607354609622);">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cop-poster"
+                                    style="background-image: url(https://www.ntnu.edu/documents/1295198420/1296559009/120-zhangchen-bc.jpg/d81bd2ea-d375-7a61-057f-661ba2bc1313?t=1607354609217);">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cop-poster"
+                                    style="background-image: url(https://www.ntnu.edu/documents/1295198420/1296559009/120-transwarp.jpg/6a7c7465-d443-a70e-4d65-b1582b4d357a?t=1607354609387);">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cop-poster"
+                                    style="background-image: url(https://www.ntnu.edu/documents/1295198420/1296559009/120-sintef.jpg/6358a1c8-736f-63d7-ac93-b9727fdc642e?t=1607354609547);">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cop-poster"
+                                    style="background-image: url(https://www.ntnu.edu/documents/1295198420/1296559009/120-hermes.jpg/dc904387-8a14-88c7-4f64-053c33d58777?t=1607354609743);">
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div class="cop-poster"
+                                    style="background-image: url(https://www.ntnu.edu/documents/1295198420/1296559009/120-dnv.jpg/493f578c-6921-ed56-07c9-ac1205dfa567?t=1607354609803);">
+                                </div>
+                            </li>
+                            
+
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+            <div class="row">
+                <main class="col-md-12">
+                    <div class="sponsor entry-content clearfix">
+                        <h1 class="entry-title">
+                            <a href="index.html#cooperate">项目资助单位</a>
+                        </h1>
+                        <p>科技部，国家重点研发计划，2019YFE0105500，中挪联合面向供应链的高性能区块链系统支撑平台关键技术研究。2020-07至2023-06。</p>
+                        <div style="width: 360px; margin:0 auto;">
+                            <img class="my-img" src="https://www.ntnu.edu/documents/1295198420/1296556811/300-ministry-of-sci-tech-china.png.jpg/9bb75191-e841-b8e6-eec7-36cd31f26379?t=1607350996290" />
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="copyright">&copy 2022 - 中挪联合面向供应链的高性能区块链系统支撑平台关键技术研究
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu -->
+    <div class="overlay overlay-hugeinc">
+        <button type="button" class="overlay-close"><span class="ion-ios-close-empty"></span></button>
+        <nav>
+            <ul>
+                <li><a href="index.html" data-hover="首页">首页</a></li>
+                <li><a href="progress.html" data-hover="进展">进展</a></li>
+                <li><a href="publications.html" data-hover="成果">成果</a></li>
+                <li><a href="events.html" data-hover="活动">活动</a></li>
+                <li><a href="about.html" data-hover="关于">原型展示</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
