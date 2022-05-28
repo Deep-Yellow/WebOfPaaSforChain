@@ -116,7 +116,8 @@
 }
 
 .news-section{
-    margin-bottom: 100px;
+    width: 80%;
+    margin: 0 auto 100px;
 }
 
 .carousel{
