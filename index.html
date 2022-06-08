@@ -106,30 +106,56 @@
     </div>
 
     <div class="row news-section">
-        <main class="col-md-8">
+        <div class="carousel">
             <el-carousel direction="vertical">
                 <el-carousel-item v-for="item in 4" :key="item">
                   <h3>{{ item }}</h3>
                 </el-carousel-item>
             </el-carousel>
-        </main>
-        <aside class="col-md-4" id="news-Aside">
-            <div class="widget widget-recent-posts">
-                <h3 class="widget-title">最新新闻</h3>
-                <ul>
-                    <li>
-                        <a href="#">第一阶段项目总结会议</a>
-                    </li>
-                    <li>
-                        <a href="#">第二阶段项目总结会议</a>
-                    </li>
-                    <li>
-                        <a href="#">中期及第三阶段项目总结会议</a>
-                    </li>
-                </ul>
-                <a href="news_list.html"><h5>查看更多</h5></a>
+        </div>
+        <div class="news-content"> 
+            <div class="header">
+                <span>最近新闻</span>
+                <span class="more">
+                    <a href="news_list.html">
+                        更多+
+                    </a>
+                </span>
             </div>
-        </aside>
+            <ul class="news-list">
+                <li class="news-item">
+                    <div class="info">
+                        <span>
+                            <a class="news-title" href="#">
+                                项目中方单位的第一阶段会议于2021年1月8日...
+                            </a>
+                        </span>
+                        <span class="news-time"> 2019-06-31</span>
+                    </div>
+                </li>
+                <li class="news-item">
+                    <div class="info">
+                        <span>
+                            <a class="news-title" href="#">
+                                第二阶段项目总结会议于2021年7月6日举行...
+                            </a>
+                        </span>
+                        <span class="news-time"> 2019-06-31</span>
+                    </div>
+                </li>
+                <li class="news-item">
+                    <div class="info">
+                        <span>
+                            <a class="news-title" href="#">
+                                项目的中期及第三阶段总结会于2022年1月13日...
+                            </a>
+                        </span>
+                        <span class="news-time"> 2019-06-31</span>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
     </div>
 
     <div class="content-body">
