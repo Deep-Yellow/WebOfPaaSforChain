@@ -108,8 +108,8 @@
     <div class="row news-section">
         <div class="carousel">
             <el-carousel direction="vertical">
-                <el-carousel-item v-for="item in 4" :key="item">
-                  <h3>{{ item }}</h3>
+                <el-carousel-item v-for="item in news" :key="item">
+                  <div class="click_box" :style="{'background-image':'url('+item.poster+')','background-repeat':'no-repeat','background-size:':'contain'}"></div>
                 </el-carousel-item>
             </el-carousel>
         </div>
@@ -127,12 +127,13 @@
                     <div class="info">
                         <span>
                             <a class="news-title" href="#">
-                                项目中方单位的第一阶段会议于2021年1月8日...
+                                项目的中期及第三阶段总结会于2022年1月13日...
                             </a>
                         </span>
-                        <span class="news-time"> 2019-06-31</span>
+                        <span class="news-time">2022-01-13</span>
                     </div>
                 </li>
+                
                 <li class="news-item">
                     <div class="info">
                         <span>
@@ -140,20 +141,19 @@
                                 第二阶段项目总结会议于2021年7月6日举行...
                             </a>
                         </span>
-                        <span class="news-time"> 2019-06-31</span>
+                        <span class="news-time">2021-07-06</span>
                     </div>
                 </li>
                 <li class="news-item">
                     <div class="info">
                         <span>
                             <a class="news-title" href="#">
-                                项目的中期及第三阶段总结会于2022年1月13日...
+                                项目中方单位的第一阶段会议于2021年1月8日...
                             </a>
                         </span>
-                        <span class="news-time"> 2019-06-31</span>
+                        <span class="news-time">2021-01-08</span>
                     </div>
                 </li>
-
             </ul>
         </div>
     </div>
@@ -360,7 +360,26 @@
     new Vue({
       el: '#app',
       data: function() {
-        return { visible: false }
+        return {
+            visible: false,
+            news: [
+                {
+                    title: '项目的中期及第三阶段总结会于2022年1月13日举行',
+                    time: '2022-01-13',
+                    poster: 'http://124.222.93.55:8000/img/event4.JPG',
+                },
+                {
+                    title: '项目的第二阶段项目总结会议于2021年7月6日举行',
+                    time: '2021-07-06',
+                    poster: 'http://124.222.93.55:8000/img/event2.JPG',
+                },
+                {
+                    title: '项目中方单位的第一阶段会议于2021年1月8日下午2点在南京大学举行',
+                    time: '2021-01-08',
+                    poster: 'http://124.222.93.55:8000/img/event1.JPG',
+                }
+            ]    
+        }
       }
     })
   </script>

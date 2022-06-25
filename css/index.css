@@ -169,3 +169,18 @@
     font-size: 20px;
     line-height: 75px;
 }
+
+.carousel .el-carousel{
+    height: 300px;
+}
+
+.carousel .el-carousel .el-carousel__container{
+    height: 100%;
+}
+
+.carousel .el-carousel .el-carousel__container .click_box{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    cursor: pointer;
+}
